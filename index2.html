@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Перспектива обновления подвижных составов</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+font-family:'Inter',sans-serif;
+background: radial-gradient(circle at 20% 20%, #2a1e5c, #0f0c29 70%);
+color:white;
+line-height:1.7;
+}
+
+section{
+padding:100px 12%;
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+background:linear-gradient(135deg,#0f0c29,#302b63,#24243e);
+}
+
+h1{
+font-size:56px;
+font-weight:800;
+max-width:900px;
+margin-bottom:30px;
+}
+
+h2{
+font-size:38px;
+margin-bottom:40px;
+}
+
+h3{
+font-size:22px;
+margin-bottom:15px;
+color:#caa8ff;
+}
+
+p{
+font-weight:300;
+opacity:0.9;
+}
+
+.glass{
+background:rgba(255,255,255,0.05);
+border:1px solid rgba(255,255,255,0.1);
+border-radius:20px;
+padding:40px;
+margin-bottom:40px;
+backdrop-filter:blur(15px);
+transition:0.3s;
+}
+
+.glass:hover{
+transform:translateY(-6px);
+box-shadow:0 0 40px rgba(170,120,255,0.3);
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.image-side{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.image-side img{
+width:100%;
+border-radius:20px;
+box-shadow:0 0 40px rgba(0,0,0,0.5);
+}
+
+footer{
+text-align:center;
+padding:60px;
+background:rgba(0,0,0,0.4);
+opacity:0.6;
+}
+
+@media(max-width:900px){
+.image-side{grid-template-columns:1fr;}
+h1{font-size:38px;}
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+<h1>Перспектива обновления подвижных составов Московского метрополитена</h1>
+<p>Работа студентов группы 4ТЭ3516 <br>Помировского Николая и <br>Солодкова Артема<br><br>Руководитель проекта<br>Макаренко Владислав Викторович
+</p>
+</section>
+
+<section>
+<h2>Введение</h2>
+<div class="glass">
+<p>
+Московский метрополитен является основой транспортной системы столицы.
+Эволюция подвижного состава отражает развитие технологий,
+повышение требований к безопасности и рост уровня комфорта пассажиров.
+Обновление вагонов — стратегический шаг в развитии городской инфраструктуры.
+</p>
+</div>
+</section>
+
+<section style="background:linear-gradient(120deg,#302b63,#24243e);">
+<h2>Глава I — Историческое развитие</h2>
+
+<div class="grid">
+
+<div class="glass">
+<h3>Тип А (1935)</h3>
+<p>Первые вагоны Московского метро. Деревянная отделка, ручные двери, реостатная система управления. Исторический прорыв своего времени.</p>
+</div>
+
+<div class="glass">
+<h3>Тип Б и Г</h3>
+<p>Улучшенная безопасность, первые шаги к автоматизации, переход к более прочным конструкциям.</p>
+</div>
+
+<div class="glass">
+<h3>Тип Д и Е</h3>
+<p>Переход к цельнометаллическому кузову и автоматическим дверям. Массовое развитие метро в СССР.</p>
+</div>
+
+<div class="glass">
+<h3>81-717 («Номерной»)</h3>
+<p>Самая массовая серия. Надёжность и унификация, но высокий шум и отсутствие кондиционирования.</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2>Глава II — Переход к современности</h2>
+
+<div class="image-side">
+
+<div class="glass">
+<h3>«Русич»</h3>
+<p>
+Первый современный поезд нового поколения (2003).
+Сквозной проход, улучшенный дизайн, новые технологии.
+Подготовил платформу для серии «Москва».
+</p>
+</div>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/60/%D0%9F%D0%BE%D0%B5%D0%B7%D0%B4_%C2%AB%D0%A0%D1%83%D1%81%D0%B8%D1%87%C2%BB_%D0%BD%D0%B0_%D1%81%D1%82%D0%B0%D0%BD%D1%86%D0%B8%D0%B8_%C2%AB%D0%92%D0%BE%D0%BB%D0%BE%D0%BA%D0%BE%D0%BB%D0%B0%D0%BC%D1%81%D0%BA%D0%B0%D1%8F%C2%BB.jpg">
+
+</div>
+</section>
+
+<section style="background:linear-gradient(120deg,#302b63,#24243e);">
+<h2>Современные серии «Москва»</h2>
+
+<div class="grid">
+
+<div class="glass">
+<h3>Москва 2019</h3>
+<p>Сквозной проход, USB-розетки, климат-контроль, информационные панели.</p>
+</div>
+
+<div class="glass">
+<h3>Москва 2020</h3>
+<p>Широкий переход 1,6 м, сенсорные экраны, высокая шумоизоляция.</p>
+</div>
+
+<div class="glass">
+<h3>Москва 2024–2026</h3>
+<p>Прозрачные перегородки, мощный климат-контроль, улучшенная эргономика.</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2>Заключение</h2>
+<div class="glass">
+<p>
+Обновление подвижного состава повышает безопасность, комфорт и энергоэффективность.
+Современные поезда формируют новый стандарт качества городского транспорта.
+Гипотеза исследования подтверждена.
+</p>
+</div>
+</section>
+
+<footer>
+Индивидуальный проект · 2026
+</footer>
+
+</body>
+</html>
